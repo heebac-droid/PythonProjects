@@ -1,0 +1,19 @@
+List of "basic" Task Tracking Features:
+- Want User to add a task (user input) <>
+- Want to list all current tasks
+- Want User to delete a task (user input)
+- List all done tasks
+- List all incomplete tasks
+- Store tasks in a JSON file
+
+What should a task contain:
+	- TaskName
+	- TaskStatus
+	- Id
+	- Description of task
+	- CreatedAt (Time and date when task is created)
+	- updateAt  (Time and date when task is updated)
+
+
+
+
