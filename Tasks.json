@@ -1,17 +1,13 @@
-
-    {
-
-    "tasks": [
-
-
-    {
-
-
-
-    }
-
-    
-    ]
-
-
-    }
+{
+  "name of task": "asdf",
+  "task description": "adf",
+  "time task was created": "20:00 5,9,2025",
+  "task id": "task1",
+  "status of task": "todo"
+}{
+  "name of task": "adsf",
+  "task description": "asd",
+  "time task was created": "20:02 5,9,2025",
+  "task id": "task1",
+  "status of task": "todo"
+}

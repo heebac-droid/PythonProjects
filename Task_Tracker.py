@@ -1,6 +1,7 @@
 from json import *
 from datetime import *
-Task_file = open("Tasks.json").read()
+Task_file = open("Tasks.json")
+Task_array = []
 Tasks = {}
 num = 12
 current_time = datetime.now()
@@ -13,7 +14,7 @@ numTasks = 0
 if minute < 10:
     minute = f"0{minute}"
 time = f"{hour}:{minute}"
-date = f"{day} {month} {year}"
+date = f"{day},{month},{year}"
 taskDate = f"{time} {date}"
 enter_tasks = True
 while enter_tasks == True:
@@ -21,17 +22,19 @@ while enter_tasks == True:
     task_description = input("Please enter task description")
     task_status = "todo"
     numTasks += 1
-    task_description = input("Please enter task description")
-    tasks['name of task'] = user_task
-    tasks['task description'] = task_description
-    tasks['time task was created'] = taskDate
-    tasks['task id'] = "task" + str(numTasks)
-    tasks['status of task'] = task_status
-    print(tasks)
-    print(numTasks)
-    task_file = open("Tasks.json","a")
-    dump(tasks,task_file,indent=2)
+    Tasks['name of task'] = user_task
+    Tasks['task description'] = task_description
+    Tasks['time task was created'] = taskDate
+    Tasks['task id'] = "task" + str(numTasks)
+    Tasks['status of task'] = task_status
+    print(Task_array)
+    Task_file = open("Tasks.json","a")
+    dump(Tasks,Task_file,indent=2)
     create_tasks = input("Do you want to enter more tasks in? (y/n)")
+    list_tasks = input("Do you want to list all current tasks (y/n)")
     if create_tasks == "n":
-        task_file.close()
+        Task_file.close()
         enter_tasks = False
+    if list_tasks == "y":
+        Task_file = open("Tasks.json")
+        print(Task_file['name of task'])
