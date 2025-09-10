@@ -1,9 +1,10 @@
 from json import *
 from datetime import *
-Task_file = open("Tasks.json").read()
+Task_file = open("Tasks.json")
+py_file = load(Task_file)
+tasks = []
+Task_file.close()
 py_tasks = {}
-Tasks = loads(Task_file)
-print(Tasks)
 current_time = datetime.now()
 day = current_time.day
 month = current_time.month
@@ -27,15 +28,16 @@ while enter_tasks == True:
     py_tasks['time task was created'] = taskDate
     py_tasks['task id'] = "task" + str(numTasks)
     py_tasks['status of task'] = task_status
-    Tasks["tasks"].append(py_tasks)
-    print(Tasks['tasks'])
+    tasks.append(py_tasks)
     Task_file = open("Tasks.json","a")
-    dump(Tasks,Task_file,indent=2)
-    Task_file.close()
-    create_tasks = input("Do you want to enter more tasks in? (y/n)")
-    list_tasks = input("Do you want to list all current tasks (y/n)")
-    if create_tasks == "n":
+    dump(py_tasks,Task_file,indent=2)
+    more_tasks = input("Do you want to add more tasks (y/n)")
+    if more_tasks == "n":
         Task_file.close()
         enter_tasks = False
-    if list_tasks == "y":
-        Task_file = open("Tasks.json")
+list_tasks = input("Do you want to list all current tasks (y/n)")
+if list_tasks == "y":
+    Task_file = open("Tasks.json").read()
+    print(Task_file)
+    python_tasks = loads(Task_file)
+    print(python_tasks)
