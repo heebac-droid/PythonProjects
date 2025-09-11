@@ -9,12 +9,12 @@ py = """
 }
 
 """
-task = open("Tasks.json").read()
+task = open("example.json").read()
 py = loads(task)
 tasks = py['tasks']
 task.close()
-task = open("Tasks.json","a")
+task = open("example.json","a")
 dump(py,tasks,indent=2)
 task.close()
-task = open("Tasks.json").read()
+task = open("example.json").read()
 print(task)
