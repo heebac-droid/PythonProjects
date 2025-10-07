@@ -1,0 +1,57 @@
+#introduction{
+
+	
+	color: #6f1eb2;
+
+}
+#job{
+
+	color: #c67007;
+
+}
+#job_title{
+
+	height: 4rem;
+	width: 6rem;
+	padding: 0.5rem;
+	border: 0.3rem solid #c67007; 
+	border-radius: 0.5rem/0.5rem;
+	text-align: center;
+}
+#job_technologies{
+
+	height: 6rem;
+	width: 10rem;
+	border: 0.3rem solid #c67007;
+	border-radius: 0.5rem/0.5rem;
+	text-align: center;
+
+}
+#job_qualifications{
+
+	
+	height: 4rem;
+	width: 10rem;
+	border: 0.3rem solid #c67007;
+	border-radius: 0.5rem/0.5rem;
+	text-align: center;
+
+}
+#Web_Projects{
+	color: #0ecc04;
+}
+#indent_items{
+
+	padding-left: 4rem;
+}
+#Work_Experience{
+
+	color:#d1a223;
+
+}
+#personal_statement{
+	color:#bc27dd;
+}
+#cover_letter{
+	color:#29e5d8;
+}
