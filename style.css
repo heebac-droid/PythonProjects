@@ -6,21 +6,48 @@
 }
 .op_buttons{
 	display: block;
-	align: left;
 	width: 120px;
 	height: 70px;
 }
-#spacing{
+#operation_spacing{
 	float: right;
 	margin-top: 250px;
 }
-#numbers{
+#nums{
 	float: left;
 	margin-top: 250px;
 }
 .num_buttons{
-	display: block;
-	align: left;
 	width: 120px;
 	height: 70px;
 }
+#space_9{
+	float: right;
+	margin-top: 320px;
+}
+#space_8{
+
+	float: right;
+	margin-top: 320px;
+}
+#space_7{
+
+	float: right;
+	margin-top: 320px;
+}
+#space_6{
+	float: right;
+	margin-top: 390px;
+	margin-right: -360px;
+}
+#space_5{
+	float: right;
+	margin-top: 390px;
+	margin-right: -240px;
+}
+#space_4{
+	float: right;
+	margin-top: 390px;
+	margin-right: -120px;
+}
+
