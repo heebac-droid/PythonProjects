@@ -1,68 +1,15 @@
+#calculator{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .operations{
-
-	padding: 5px;
-	padding-top: 1px;
-	font-size: 25px;
+	padding: 2vh;
+	height: 6vh;
 }
-.op_buttons{
-	display: block;
-	width: 120px;
-	height: 70px;
-}
-#operation_spacing{
-	float: right;
-	margin-top: 250px;
-}
-#nums{
-	float: left;
-	margin-top: 250px;
-}
-.num_buttons{
-	width: 120px;
-	height: 70px;
-}
-#space_9{
-	float: right;
-	margin-top: 320px;
-}
-#space_8{
-
-	float: right;
-	margin-top: 320px;
-}
-#space_7{
-
-	float: right;
-	margin-top: 320px;
-}
-#space_6{
-	float: right;
-	margin-top: 390px;
-	margin-right: -360px;
-}
-#space_5{
-	float: right;
-	margin-top: 390px;
-	margin-right: -240px;
-}
-#space_4{
-	float: right;
-	margin-top: 390px;
-	margin-right: -120px;
-}
-#space_3{
-	float: right;
-	margin-top: 460px;
-	margin-right: -360px;
-}
-#space_2{
-	float: right;
-	margin-top: 460px;
-	margin-right: -240px;
-}
-#space_1{
-	float: right;
-	margin-top: 460px;
-	margin-right: -120px;
-}
+body{
+	background-color: #000000;
 
