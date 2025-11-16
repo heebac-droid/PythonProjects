@@ -2,14 +2,26 @@
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
 }
 
 .operations{
 	padding: 2vh;
 	height: 6vh;
+	width: 6vh;
+	margin-left: 75vh;
 }
 body{
 	background-color: #000000;
 
+
+
+#add{
+	margin-top: 45vh;
+}
+
+#over-top-row{
+
+	display: flex;
+	align-items: flex-start;
+}
